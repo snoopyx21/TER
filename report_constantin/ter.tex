@@ -1,0 +1,65 @@
+\documentclass[twoside,openright,a4paper,12pt]{book}
+
+\usepackage{mystyle}
+\usepackage{glossaries}
+\usepackage{float}
+
+\makeatletter
+\renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
+	{-2.5ex\@plus -1ex \@minus -.25ex}%
+	{1.25ex \@plus .25ex}%
+	{\normalfont\normalsize\bfseries}}
+\makeatother
+\setcounter{secnumdepth}{4} % how many sectioning levels to assign numbers to
+<<<<<<< HEAD
+\setcounter{tocdepth}{3}    % how many sectioning levels to show in ToC
+=======
+\setcounter{tocdepth}{2}    % how many sectioning levels to show in ToC
+>>>>>>> master
+
+\definecolor{pinegreen}{rgb}{0.0, 0.47, 0.44}
+\newcommand{\ag}[1]{}
+
+\loadglsentries{./chapters/defns}
+\makeglossaries
+\begin{document}
+
+	\frontmatter%
+
+	% La page de garde
+	\input{./chapters/front-page}
+
+	% Page blanche au dos de la page de garde
+	\newpage
+	\pagestyle{empty}
+
+	% La table des matières
+	\renewcommand\contentsname{Table des matières}
+    \begingroup
+    \renewcommand{\cleardoublepage}{}
+    \renewcommand{\clearpage}{}
+	\tableofcontents
+    \endgroup
+
+	\mainmatter%
+
+	\include{./chapters/introduction}
+	\include{./chapters/etat_art}
+	\include{./chapters/communication}
+
+	\include{./chapters/conclusion}
+
+	\begingroup
+    \renewcommand{\cleardoublepage}{}
+    \renewcommand{\clearpage}{}
+	\printglossaries
+    \endgroup
+
+	\begingroup
+    \renewcommand{\cleardoublepage}{}
+    \renewcommand{\clearpage}{}
+	\bibliography{\jobname}
+	\bibliographystyle{plain}
+    \endgroup
+
+\end{document}

@@ -1,0 +1,184 @@
+\begin{thebibliography}{10}
+
+\bibitem{web_security}
+Open Web Application Security Project~Top 10-2013.
+\newblock The ten most critical web application security risks.
+\newblock \url{https://www.owasp.org/index.php/Top10/OWASP>}, Mis en ligne en
+  2013, consulté le 03 Mars 2019.
+
+\bibitem{security_cloud_survey}
+Mazhar Ali, Samee~U. Khan, and Athanasios~V. Vasilakos.
+\newblock Security in cloud computing: Opportunities and challenges.
+\newblock {\em Information Sciences}, 305:357--383, June 2015.
+
+\bibitem{firewall}
+S.M. Bellovin and W.R. Cheswick.
+\newblock Network firewalls.
+\newblock {\em Communications Magazine}, 32:50--57, September 1994.
+
+\bibitem{defcon20}
+Bitweasil.
+\newblock Cryptohaze cloud cracking.
+\newblock In {\em Defcon 20}, 2012.
+
+\bibitem{asbe}
+R.~Bobba, H.~Khurana, and M.~Prabhakaran.
+\newblock Attribute-sets: a practically motivated enhancement to
+  attribute-based encryption.
+\newblock page 587–604, 2009.
+
+\bibitem{faiblesse_cloud}
+David Bryan and Michael Anderson.
+\newblock Cloud computing : A weapon of mass destruction ?
+\newblock In {\em DEFCON 18}, 2010.
+
+\bibitem{pgp}
+J.~Callas, L.~Donnerhacke, H.~Finney, D.~Shaw, and R.~Thayer.
+\newblock {\em OpenPGP message format}, November 2007.
+
+\bibitem{tls}
+T.~Dierks and E.~Rescorla.
+\newblock {\em The Transport Layer Security (TLS) Protocol}, August 2008.
+
+\bibitem{ipsec_vpn}
+Sheila Frankel, Karen Kent, Ryan Lewkowski, Angela Orebaugh, Ronald Ritchey,
+  and Steven Sharma.
+\newblock {\em Guide to IPsec VPNs}, December 2005.
+
+\bibitem{ssl}
+A.O. Freier, P.~Karlton, and P.C. Kocher.
+\newblock {\em The Secure Sockets Layer (SSL) Protocol Version 3.0}, August
+  2011.
+
+\bibitem{tree_rule_firewall}
+X.~He, T.~Chomsiri, P.~Nanda, and Z.~Tan.
+\newblock Improving cloud network security using the tree-rule firewall.
+\newblock {\em Future Generation Computer Systems}, 30:116--126, 2014.
+
+\bibitem{security_cloud_issues}
+M.~Balachandra~Reddy Kandukuri, Ramakrishna~Paturi V, and Dr.~Atanu Rakshit.
+\newblock Cloud security issues.
+\newblock {\em IEEE International Conference on Services Computing}, pages
+  517-- 520, September 2009.
+
+\bibitem{archi_inter}
+Dayananda~S. M. and Kumar A.
+\newblock Architecture for inter-cloud services using ipsec vpn.
+\newblock {\em Proceedings of Advanced Computing and Communication Technologies
+  (ACCT)}, pages 463--467, 2012.
+
+\bibitem{definition_cloud}
+Peter Mell and Timothy Grance.
+\newblock The nist definition of cloud computing.
+\newblock September 2011.
+
+\bibitem{defcon17}
+Haroon Merr, Marco Slaviero, and Nicholas Arvanitis.
+\newblock Clobbering the cloud !
+\newblock In {\em Defcon 17}, 2009.
+
+\bibitem{security_guidelines}
+Rich Mogull, James Arlen, Francoise Gilbert, Adrian Lane, David Mortman, Gunnar
+  Peterson, and Mike Rothman.
+\newblock Security guidelines for critical areas of focus in cloud computing
+  v4.0.
+\newblock 2017.
+
+\bibitem{new_attack_cloud}
+Kaustubh Pande.
+\newblock Is cross-tenant cloud attack a legitimate threat?
+\newblock
+  \url{https://www.mindtree.com/blog/cross-tenant-cloud-attack-legitimate-threat}.
+\newblock Dernière modification du site le 16 Juillet 2018, consulté le 5
+  Mars 2019.
+
+\bibitem{pox}
+Margaret Rousse.
+\newblock Pox.
+\newblock \url{https://searchnetworking.techtarget.com/definition/POX}.
+\newblock Dernière modification du site en Mars 2013, consulté le 27 Avril
+  2019.
+
+\bibitem{asb}
+A.~Sahai and B.~Waters.
+\newblock Fuzzy identity-based encryption.
+\newblock page 457–473, September 2005.
+
+\bibitem{use_ip_cloud}
+S.~Subashini and V.~Kavitha.
+\newblock A survey on security issues in service delivery models of cloud
+  computing.
+\newblock {\em J. Netw. Comput. Appl.}, 34:1--11, 2011.
+
+\bibitem{fade}
+Y.~Tang, P.P. Lee, J.C.S. Lui, and R.~Perlman.
+\newblock Secure overlay cloud storage with access control and assured
+  deletion.
+\newblock {\em Transactions on Dependable and Secure Computing}, 9:903--916,
+  2012.
+
+\bibitem{ip_security}
+R.~Thayer, N.~Doraswamy, and R.~Glenn.
+\newblock {\em IP Security Document Roadmap}, November 1998.
+
+\bibitem{hasbe}
+Z.~Wan, J.~Liu, and R.H. Deng.
+\newblock Hasbe: a hierarchical attribute-based solution for flexible and
+  scalable access control in cloud computing.
+\newblock {\em Transactions on Information Forensics and Security}, 7:743--754,
+  2012.
+
+\bibitem{secCloud}
+L.~Wei, H.~Zhu, Z.~Cao, X.~Dong, W.~Jia, Y.~Chen, and A.V. Vasilakos.
+\newblock Security and privacy for storage and computation in cloud computing.
+\newblock {\em Informations Sciences}, 258:371--386, 2014.
+
+\bibitem{xacml}
+Wikipedia.
+\newblock extensible access control markup language (xacml).
+\newblock \url{https://en.wikipedia.org/wiki/XACML}.
+\newblock Dernière modification du site le 14 Mars 2019, consulté le 27 Avril
+  2019.
+
+\bibitem{gre}
+Wikipedia.
+\newblock Generic routing encapsulation.
+\newblock \url{https://en.wikipedia.org/wiki/Generic_Routing_Encapsulation}.
+\newblock Dernière modification du site le 15 Mars 2019, consulté le 12 Mars
+  2019.
+
+\bibitem{nhrp}
+Wikipedia.
+\newblock Next hop resolution protocol.
+\newblock \url{https://en.wikipedia.org/wiki/Next_Hop_Resolution_Protocol}.
+\newblock Dernière modification du site le 7 Juin 2018, consulté le 12 Mars
+  2019.
+
+\bibitem{prise_empreinte_def}
+Wikipedia.
+\newblock Tcp ip stack fingerprinting.
+\newblock \url{https://en.wikipedia.org/wiki/TCP/IP_stack_fingerprinting}.
+\newblock Dernière modification du site le 18 Février 2019, consulté le 07
+  Avril 2019.
+
+\bibitem{snortflow}
+T.~Xing, D.~Huang, L.~Xu, C.~Chung, and P.~Khatkar.
+\newblock Snortflow: a openflow-based intrusion prevention system in cloud
+  environment.
+\newblock page pp. 89–92, 2013.
+
+\bibitem{sdnips}
+T.~Xing, Z.~Xiong, D.~Huang, and D.~Medhi.
+\newblock Sdnips: Enabling software-defined networking based intrusion
+  prevention system in clouds.
+\newblock {\em International Conference on Network and Service Management
+  (CNSM) and Workshop}, page 308–311, November 2014.
+
+\bibitem{internet_cloud}
+Y.A. Younis, M.~Merabti, and K.~Kifayat.
+\newblock Secure cloud computing for critical infrastructure: a survey.
+\newblock 2013.
+\newblock Technical Report, Liverpool John Moores University, United Kingdom,
+  Tech. Rep. ISBN: 978-1-902560-27-4.
+
+\end{thebibliography}

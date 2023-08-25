@@ -1,0 +1,19 @@
+\glossaryentry{\textit {Service Level Agreement}?\glossentry{SLA}|setentrycounter[]{page}\glsnumberformat}{1}
+\glossaryentry{\textit {Black Hats}?\glossentry{Black Hats}|setentrycounter[]{page}\glsnumberformat}{1}
+\glossaryentry{\textit {Virtual Machine}?\glossentry{VMs}|setentrycounter[]{page}\glsnumberformat}{2}
+\glossaryentry{firewalls?\glossentry{firewalls}|setentrycounter[]{page}\glsnumberformat}{2}
+\glossaryentry{IDS?\glossentry{IDS}|setentrycounter[]{page}\glsnumberformat}{2}
+\glossaryentry{IPS?\glossentry{IPS}|setentrycounter[]{page}\glsnumberformat}{2}
+\glossaryentry{\textit {Trusted third party}?\glossentry{TPA}|setentrycounter[]{page}\glsnumberformat}{5}
+\glossaryentry{\textit {Role-Based Access Control}?\glossentry{RBAC}|setentrycounter[]{page}\glsnumberformat}{6}
+\glossaryentry{\textit {VM hopping}?\glossentry{VM hopping}|setentrycounter[]{page}\glsnumberformat}{6}
+\glossaryentry{Hyperviseur?\glossentry{hyperviseur}|setentrycounter[]{page}\glsnumberformat}{8}
+\glossaryentry{\textit {eXtensible Access Control Markup Language} (XACML)?\glossentry{XACML}|setentrycounter[]{page}\glsnumberformat}{9}
+\glossaryentry{TCP/IP?\glossentry{TCP/IP}|setentrycounter[]{page}\glsnumberformat}{11}
+\glossaryentry{\textit {Generic Routing Encapsulation}?\glossentry{GRE}|setentrycounter[]{page}\glsnumberformat}{12}
+\glossaryentry{\textit {Next Hop Resolution Protocol}?\glossentry{NHRP}|setentrycounter[]{page}\glsnumberformat}{12}
+\glossaryentry{\textit {Generic Routing Encapsulation}?\glossentry{GRE}|setentrycounter[]{page}\glsnumberformat}{13}
+\glossaryentry{\textit {Local Area Network}?\glossentry{LAN}|setentrycounter[]{page}\glsnumberformat}{14}
+\glossaryentry{prise d'empreinte?\glossentry{prises d'empreintes}|setentrycounter[]{page}\glsnumberformat}{14}
+\glossaryentry{OpenFlow?\glossentry{OpenFlow}|setentrycounter[]{page}\glsnumberformat}{14}
+\glossaryentry{POX?\glossentry{POX}|setentrycounter[]{page}\glsnumberformat}{14}

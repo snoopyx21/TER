@@ -1,0 +1,29 @@
+\begingroup
+\renewcommand{\cleardoublepage}{}
+\renewcommand{\clearpage}{}
+\chapter{Conclusion}
+\endgroup
+
+Le but de ce chapitre est de résumer les contributions de ce Travail
+d'Étude et de Recherche, à savoir une classification des différentes catégories
+de problèmes de sécurité dans le cloud informatique, une étude des différentes
+solutions de la littérature, et une analyse des points qui pourraient être
+améliorés.
+La section~\ref{sec:con} résume les différentes contributions de ce document,
+et la section~\ref{sec:per} énumère les potentielles contributions futures,
+comme par exemple les points faibles des architectures actuelles.
+
+\section{Contributions}\label{sec:con}
+
+Dans ce sujet du Travail d'Étude et de Recherche, nous nous sommes intéressés à la sécurité de systèmes de \textit{workflow}. Nous nous sommes limités à un cas d'étude particulier : le cloud computing. Pour sécuriser ce système, il est nécessaire d'établir la surveillance globale du trafic, afin de détecter l’ensemble des attaques perpétrées, y compris les attaques internes à la structure. Les solutions de sécurité traditionnelles
+réalisent généralement leurs analyses en ne considérant que le trafic qui transite localement.
+De même, les traitements réalisés par ces équipements estiment que les attaques proviennent exclusivement de l’extérieur du réseau. Cette vision n’est malheureusement plus applicable pour
+des réseaux comme le cloud, où un utilisateur malicieux peut facilement obtenir des ressources puissantes, et à bas coût, pour réaliser des attaques provenant du réseau interne. Cependant, le cloud ne pose pas que des problèmes de sécurité au niveau du réseau. Le stockage et la virtualisation posent également de nouveaux problèmes de sécurité.
+
+Pour palier à ces problèmes, ce document propose différentes pistes à établir dans un cloud dans le but d'améliorer la sécurité du réseau principalement, mais également au niveau de la virtualisation et du stockage. Tout d'abord, nous avons proposé deux solutions différentes pour améliorer le stockage dans le cloud : FADE et SecCloud. Ensuite, nous avons évoqué différentes pistes pour sécuriser la virtualisation et permettre son fonctionnement. Par la suite, une solution a été proposée pour permettre une authentification sécurisée et un contrôle d'accès efficace. Puis, nous nous sommes intéressés au réseau, plus précisément aux communications inter-cloud et intra-cloud. Une architecture DMVPN (\textit{Dynamic Multipoint VPN}) garantit l'utilisation d'IPSecVPN et résout les différents problèmes posés par les architectures inter-cloud actuelles. La partie intra-cloud se compose par l'utilisation d'un NIDS et d'un \textit{firewall}. Deux NIDS sont proposés, SnortFlow et SDNIPS. Cependant, seul SDNIPS propose une véritable application et différentes comparaisons prouvant l'efficacité du NIDS dans un environnement cloud. Enfin, le  \textit{Tree-rule firewall} est mis en avant. Ce dernier se différencie des \textit{firewalls} classiques, appelés \textit{Listed-rule firewall}, car il résout tous les problèmes de performance et de sécurité associés aux \textit{Listed-rule firewall}.
+
+\section{Perspectives}\label{sec:per}
+
+Tout d'abord, les premières perspectives envisagées par ce document sont l'établissement et l'intégration des pistes étudiées dans un environnement cloud, plus précisément dans un cloud public. De plus, les différents pistes abordées présentent également des défauts et peuvent faire l'objet d'évolutions. Par exemple, le \textit{Tree-rule firewall} ne traite pas encore IPv6, NAT (\textit{Network Address Translation}) ou encore les VPN. Si l'intégration du VPN s'effectue, il peut paraître très pertinent d'associer l'architecture inter-cloud proposée avec des règles de \textit{firewall}. 
+
+Malheureusement, le cloud évolue sur plusieurs nouvelles couches réseaux et des nouvelles technologies continuent d'apparaître et d'évoluer à une vitesse vertigineuse. Il existe un vrai décalage entre la sécurité et les technologies actuelles ce qui implique un décalage entre les menaces actuelles de sécurité et les solutions et le périmètre de sécurité établis.

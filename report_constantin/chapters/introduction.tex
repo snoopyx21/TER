@@ -1,0 +1,174 @@
+\begingroup
+\renewcommand{\cleardoublepage}{}
+\renewcommand{\clearpage}{}
+\chapter{Introduction}
+\endgroup
+
+L'objectif de ce sujet du Travail d'Étude et de Recherche est de modéliser un système de \textit{workflow} répondant à :
+\begin{itemize}
+	\item une authentification sécurisée de plusieurs acteurs d’un même système,
+	\item une communication sécurisée entre plusieurs acteurs,
+	\item une gestion de l’ordonnancement de plusieurs tâches entre elles.
+\end{itemize}
+
+Pour pouvoir répondre convenablement au sujet, nous nous limiterons à un cas d'étude particulier des systèmes de \textit{workflow} : le cloud informatique, appelé aussi \textit{cloud computing}. Nous nous intéresserons plus particulièrement à la communication sécurisée entre plusieurs acteurs au sein du \textit{cloud computing}.
+\newline
+La définition, fournie par l'institut national des standards et de la technologie (NIST) en 2011, permet de comprendre le but et les objectifs du cloud informatique (\cite{definition_cloud}) : « accès à distance via le réseau, à la demande et en libre-
+service, à des ressources informatiques partagées
+configurables ». Le \textit{cloud computing} se compose par plusieurs fonctionnalités
+importantes telles que : il est accessible à distance n’importe où, et n'importe quand (mondialisation), c'est un service à la demande (Rapidité, facilité, flexibilité, scalabilité) et proposant une haute disponibilité du service (\textit{Service Level Agreement} (\gls{SLA})) et une sécurité des données (stockage sécurisé) et impliquant une démarche éco-responsable.
+Le NIST présente également différents modèles de cloud.
+Tout d'abord, il existe le cloud privé proposant une infrastructure exclusivement réservée à une entreprise ou une organisation.
+Le cloud communautaire, lui, est une infrastructure réservée à une communauté d'organisations partageant des objectifs communs (politique de sécurité par exemple). Puis, le cloud public est une infrastructure appartenant à une entité et proposant des services payants accessible par le grand public. Enfin, il existe le cloud hybride, qui est une infrastructure composée de plusieurs types de cloud.
+Dans ce document, les principales cibles d'attaques sont les clouds publics c'est pourquoi nous nous focaliserons dessus. Le nombre de données et de personnes plus élevés que sur les autres modèles de cloud ouvrent plus de possibilités aux \textit{\gls{Black Hats}}.
+
+Les caractéristiques du cloud informatique ont créées une certaine popularité de cette nouvelle forme de stockage dans l'industrie et dans les académies, à tel point que même certaines infrastructures importantes et critiques (banque, NASA) soient tentées de migrer vers le cloud. L'enjeu et obstacle principal du cloud informatique à l'heure actuelle est la sécurité du cloud, qui empêche notamment son utilisation unanime \cite{security_cloud_issues}.
+
+La sécurité du cloud implique des concepts tels que la sécurité des réseaux, du
+matériel, mais également la sécurité de nouveaux concepts tels que la
+virtualisation et de l'architecture \textit{multi-tenant}. En effet, les
+solutions de sécurité actuelles proposent des solutions contre des menaces
+provenant de l'extérieur afin de protéger le réseau intérieur, mais cette
+approche n'est plus viable avec le cloud \cite{defcon17} \cite{defcon20}. En
+effet, le système ne peut plus avoir confiance dans son réseau interne, car un
+utilisateur malicieux peut être présent sur le réseau interne. Des nouvelles
+attaques ont émergées suite à l'arrivé du cloud \cite{new_attack_cloud}. La sécurité dans le cloud fait alors appel à une série de politiques de sécurité et de technologies dans le but de protéger les données, informations, applications et infrastructures permettant d'assurer la sécurité du cloud en validant certains propriétés :
+\begin{description}
+	\item[Disponibilité :] les ressources du cloud sont toujours accessible aux utilisateurs.
+	\item[Integrité :] la modification ou la suppression par des utilisateurs non autorisés est impossible et le cloud permet de vérifier que les données n'ont pas été altérées.
+	\item[Confidentialité :] les données des utilisateurs sont secrètes et aucun autre utilisateur n'a de droit sur les données d'un autre utilisateur.
+	\item[Contrôle :] gestion des ressources du cloud.
+	\item[Authentification :] le cloud est capable de garantir que l'utilisateur est bien celui qu'il prétend lorsqu'un utilisateur agit sur les ressources du cloud et les utilise.
+	\item[Non-répudation :] le cloud est capable de garantir les actions effectués sur des ressources par un utilisateur.
+\end{description}
+
+Dans un environnement cloud, le vecteur d'attaque principal est le réseau. Il apparaît crucial de sécuriser les communications internes et externes. Par conséquent, nous avons séparer les communications en deux catégories : les communications intra-cloud et inter-cloud.
+Les communications intra-cloud impliquent de nouveaux concepts et ont générés
+des nouveaux problèmes en terme de sécurité.
+Le partage des communications sur une même
+infrastructure et les réseaux virtuels sont des nouveaux challenges
+dues aux nouveaux concepts du cloud. (\cite{security_cloud_survey}). Un routeur
+virtuel est une instance d'un routeur physique, et plusieurs routeurs virtuels
+peuvent s'exécuter en même temps sur un même routeur physique. On obtient alors
+la possibilité de déployer plusieurs réseaux, que l'on appelle des réseaux
+virtuels, sur un même réseau physique. Un réseau virtuel est un regroupement
+d'un ensemble de routeurs virtuels compatibles. Les routeurs virtuels utilisent
+les liaisons physiques pour s'interconnecter. Tous ces routeurs virtuels
+doivent être isolés les uns des autres et cela implique une sécurité des
+réseaux implacable à ce niveau. En effet, comme les \gls{VMs} (ou appelés
+également machines virtuelles) partagent la même infrastructure réseau physique
+et cela ouvre notamment la porte à des attaques de type cross-tenant
+\cite{new_attack_cloud}. L'isolation des réseaux protège également contre des
+attaques globales.
+Les communications inter-cloud sont similaires
+	aux communications sur Internet et donc, les différents problèmes de
+	sécurité sont les mêmes.
+
+Dans ce document, nous allons nous intéresser à la sécurité du cloud au niveau
+du réseau au travers notamment des communications internes et externes du
+cloud, car l'intégrité et la confidentialité des données peuvent être menacés à
+chaque communication. Les solutions aujourd'hui pour assurer la sécurité du
+cloud informatique passent notamment par l'utilisation de \gls{firewalls}, des \gls{IDS} et des \gls{IPS}. Sécuriser le réseau du cloud permet d'éviter de nombreuses attaques. 
+Tout d'abord, le balayage de port qui se définit comme une attaque réseau visant à récupérer l'état des services réseaux d'une machine. L'attaque par déni de service, appelée \textit{Denial of Service} (DoS), est une attaque réseau pouvant cibler différents composants d'un système (processeur, mémoire) et visant à dégrader les performances du système. On parle maintenant d'attaque DDoS (\textit{Distributed Denial of Service}), car l'attaque est menée par plusieurs systèmes. L'attaque \textit{cross-tenant} exploite la mémoire cache L3, ce cache étant l’image miroir de la mémoire système et est partagé entre tous les utilisateurs sur un cloud \textit{multi-tenant}. Une personne malveillante va alors manipuler l’état de cette mémoire cache et attendre l’activité d’un utilisateur. En examinant les sections du cache modifiées, la personne malveillante peut trouver l’adresse mémoire contenant les données de l’utilisateur \cite{new_attack_cloud}. Le \textit{spoofing} se définit par l'usurpation d'identité visant à se faire passer pour quelqu'un d'autre dans le but de commettre différents actes malveillants. Enfin, on terminera par le \textit{sniffing} qui se caractérise par une écoute clandestine d'un réseau visant à lire et capturer les données qui transitent.
+
+Nous allons tenter de répondre au problème suivant : comment obtenir un réseau
+sécurisé tout en garantissant un niveau de performance élevé et une confiance
+limitée à tous les niveaux. Nous allons tenter, dans ce rapport, de trouver les
+meilleures solutions possibles actuelles et de comprendre quels éléments
+peuvent être rajoutés à cette configuration pour obtenir une configuration
+idéale. Le but de ce document sera donc de créer une solution cohérente qui
+inclut le maximum de besoins et d’exigences en sécurité dans l’environnement cloud, mais cette solution doit être en balance entre les enjeux de sécurité et les enjeux de performance et de disponibilité du cloud. Ce document se base principalement sur l'étude effectuée par Mazhar et al. \cite{security_cloud_survey}.
+
+Nous allons poser différentes hypothèses liées à notre problématique auxquels nous allons chercher à répondre par des solutions concrètes :
+\begin{description}
+	 \item[Hypothèse de stockage :] aucune confiance, les données du cloud ne
+         doivent jamais être rendues publiques ou être victime d'une violation
+         de données.
+	 \item[Hypothèse d'utilisateur :] confiance limité avec l'utilisateur, ce dernier peut provoquer des fuites de données.
+	 \item[Hypothèse du réseau :] aucune confiance au réseau, les données ne doivent pas être visibles et lues par une personne malveillante écoutant le réseau.
+\end{description}
+
+La figure \ref{fig:roadmap} décrit les différents challenges au niveau de la sécurité et souligne les parties, en rouge, dont nous allons nous préoccuper principalement. Ce modèle fait écho aux hypothèses que nous avons posé et nous allons nous baser notamment sur l'étude effectuée \cite{security_cloud_survey}) qui découpe la sécurité du cloud en plusieurs sections distinctes et propose différentes solutions pertinentes.
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[y=-1cm, scale=0.9, x=-1cm]
+\begin{scope}[every node/.style={ellipse, draw}]
+	\node (A) at (-0.5,1) {Sécurité du Cloud};
+	\node (B) at (-4,2) {Communication};
+	\node (C) at (3,2) {Architecture};
+	\node (HY) at (-0.5, 2.5) {Matériel};
+	\node (FA) at (-9,1) {Famille};
+\end{scope}
+
+\begin{scope}[every node/.style={ellipse, draw, align=center}]
+	\node (H) at (7,4) {Virtualisation};
+	\node (J) at (2.4,4) {Stockage};
+\end{scope}
+\begin{scope}[every node/.style={ellipse, draw=red, align=center, line width=3pt}]
+	\node (F) at (-6.85,4) {Externe};
+	\node (G) at (-3.85,4) {Interne};
+\end{scope}
+\begin{scope}[every node/.style={fill=white,circle,bottom},
+              every path/.style={draw=black, thick}]
+	\path [->] (A) -- (B);
+	\path [->] (A) -- (C);
+	\path [->] (A) -- (HY);
+	\path [->] (C) -- (H);
+	\path [->] (C) -- (J);
+	\path [->] (HY) -- (J);
+	\path [->] (B) -- (G);
+	\path [->] (B) -- (F);
+
+\end{scope}
+\begin{scope}[every node/.style={draw=red, rounded rectangle, align=center,
+    line width=3pt}]
+		\node (TR) at (-4,6) {Logiciel};
+		\node (LI) at (3,6) {Réseau};
+		\node (TI) at (-0.5,6) {Hardware};
+\end{scope}
+\begin{scope}[every node/.style={draw, rounded rectangle, align=center}]
+		\node (FA) at (-9,3) {Méchanismes};
+\end{scope}
+\begin{scope}[every node/.style={fill=white,circle,bottom},
+								every path/.style={draw=black, thick}]
+		\path [->] (H) -- (TR);
+		\path [->] (H) -- (LI);
+		\path [->] (H) -- (TI);
+		\path [->] (J) -- (TR);
+		\path [->] (J) -- (LI);
+		\path [->] (J) -- (TI);
+\end{scope}
+\begin{scope}[every node/.style={fill=white,circle,bottom},
+every path/.style={draw=red, densely dotted, line width=3pt}]
+	\path [->] (G) -- (TR);
+	\path [->] (G) -- (LI);
+	\path [->] (G) -- (TI);
+\end{scope}
+\begin{scope}[every node/.style={draw=red, rectangle, align=center, line width=3pt}]
+	\node (ZA) at (3,8) {IDS, IPS};
+	\node (ZB) at (-4,8) {Firewall};
+	\node (ZC) at (-.5,8) {Politique de\\sécurité};
+\end{scope}
+\begin{scope}[every node/.style={draw, rectangle, align=center}]
+	\node (ZZ) at (-9,5) {Outils};
+\end{scope}
+\begin{scope}[every node/.style={fill=white,circle,bottom},
+	every path/.style={draw=red, densely dotted, line width=3pt}]
+	\path [->] (LI) -- (ZA);
+	\path [->] (TR) -- (ZB);
+	\path [->] (TI) -- (ZC);
+	\end{scope}
+\end{tikzpicture}
+\caption{Challenges de la sécurité du cloud}
+  \label{fig:roadmap}
+\end{figure}
+
+Ce document est organisé de la manière suivante : le chapitre 2 contient un
+état de l'art de la sécurité dans le cloud informatique structuré autour de trois
+axes : la stockage~\ref{sec:sto}, la virtualisation~\ref{sec:vir}, et l'authentification et le contrôle
+d'accès~\ref{sec:auth}.
+Le chapitre 3 analysera différentes méthodes de la littérature pour les
+communications réseaux dans le cloud, avec une séparation entre les
+communications inter-cloud~\ref{sec:inter_cloud} dans un premier temps, puis les communications
+intra-cloud~\ref{sec:intra_cloud}.

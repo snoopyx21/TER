@@ -1,0 +1,46 @@
+\glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
+\begin{theglossary}\glossaryheader
+\glsgroupheading{glssymbols}\relax \glsresetentrylist %
+\glossentry{Black Hats}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{1}}}%
+\glossentry{GRE}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{12\delimN 13}}}%
+\glossentry{LAN}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{14}}}%
+\glossentry{NHRP}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{12}}}%
+\glossentry{RBAC}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{6}}}%
+\glossentry{SLA}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{1}}}%
+\glossentry{TPA}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{5}}}%
+\glossentry{VM hopping}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{6}}}%
+\glossentry{VMs}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{2}}}%
+\glossentry{XACML}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{8}}}\glsgroupskip
+\glsgroupheading{F}\relax \glsresetentrylist %
+\glossentry{firewalls}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{2}}}\glsgroupskip
+\glsgroupheading{H}\relax \glsresetentrylist %
+\glossentry{hyperviseur}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{7}}}\glsgroupskip
+\glsgroupheading{I}\relax \glsresetentrylist %
+\glossentry{IDS}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{2}}}%
+\glossentry{IPS}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{2}}}\glsgroupskip
+\glsgroupheading{O}\relax \glsresetentrylist %
+\glossentry{OpenFlow}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{14}}}\glsgroupskip
+\glsgroupheading{P}\relax \glsresetentrylist %
+\glossentry{POX}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{14}}}%
+\glossentry{prises d'empreintes}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{14}}}\glsgroupskip
+\glsgroupheading{T}\relax \glsresetentrylist %
+\glossentry{TCP/IP}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{11}}}%
+\end{theglossary}\glossarypostamble

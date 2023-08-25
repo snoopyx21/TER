@@ -1,0 +1,64 @@
+\ProvidesPackage{mystyle}
+\usepackage{titlesec}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% Chapters: Options: Glenn, Conny, Bjarne, Bjornstrup
+\usepackage[Conny]{fncychap}
+
+% Pictures
+\usepackage{graphicx}
+
+% Custom margins
+\usepackage{geometry}
+\geometry{%
+    left=22mm,%
+    right=22mm,%
+    top=15mm,%
+    bottom=15mm,%
+    foot=10mm%
+}
+
+% Misc
+\usepackage[svgnames]{xcolor}
+\usepackage{hyperref}
+\usepackage{outlines}
+\usepackage{lipsum}
+\usepackage{subfigure}
+
+% Images
+\graphicspath{{pics/}}
+
+% Arabic number for sections
+\renewcommand{\thesection}{\arabic{section}}
+
+% TiKz stuff
+\usepackage{tikz}
+\usetikzlibrary{shapes,%
+                fit,%
+                positioning,%
+                arrows,%
+                intersections,%
+                shadows.blur,%
+                chains%
+}
+
+% Environnements pour les retours
+\colorlet{note_color}{DarkGreen}
+\colorlet{comment_color}{DarkRed}
+\newenvironment{NOTE}[0]{%
+    \leavevmode\color{note_color}\ignorespaces%
+}{%
+}%
+\newenvironment{comment}[0]{%
+    \leavevmode\color{comment_color}\ignorespaces%
+}{%
+}%
+
+% Chapters: Options: Glenn, Conny, Bjarne, Bjornstrup
+%\usepackage[Conny]{fncychap}
+\newcommand{\hsp}{\hspace{10pt}}
+\titleformat{\section}[hang]{\Huge\bfseries}{\thesection\hsp{|}\hsp}{0pt}{\Huge\bfseries}
+
+\titlespacing{\section}{0pt}{1\baselineskip}{1\baselineskip}
+
